@@ -30,3 +30,29 @@
     color : snow;
 }
 
+nav{
+    width: 4.1vw;
+    height: 47.7vh;
+    /* background: black; */
+    position: fixed;    
+    left: 20px;
+}
+
+nav div{
+    /* border: 1px solid snow; */
+    width: 4vw;
+    height: 4vw;
+    background: black;
+    border-radius: 50%; 
+    margin: 15px;
+    z-index: 100;
+    /* display: flex;
+    align-content: center;
+    align-items: center;     */
+}
+nav div a i{
+    color: rgb(250, 249, 249);
+    font-size: 30px;
+    margin-left: 14px;
+    margin-top: 13px;   
+}
