@@ -1,4 +1,17 @@
-let input = document.querySelector('input')
-let textarea = document.querySelector('textarea')
+let input = document.querySelector("input");
+let textarea = document.querySelector("textarea");
+let submitLink = document.querySelector("#submitLink");
+let description;
+let subject;
+input.addEventListener("input", (e) => {
+  subject = e.target.value;
+});
 
-input.addEventListener('input', (e))
+textarea.addEventListener("input", (e) => {
+  description = e.target.value;
+});
+
+submitLink.addEventListener("click", (e) => {
+e.preventDefault();
+submitLink.href = `mailto:sankettamnar2003@gmail.com?subject=${subject}&body=${description}`;
+});
