@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <form action="">
+        <span></span><br>
+       <input type="range" min="0" max="100" step="5">
+       <button>click</button>
+       <br><br><br>
+       //for using input type radio name atribute is compulsory
+       <input type="radio" id="html" name="webtech">
+       <label for="html">Html</label><br>
+       <input type="radio" id="css" name="webtech">
+       <label for="css">CSS</label><br>
+       <input type="radio" id="js" name="webtech">
+       <label for="js">JavaScript</label>
+    </form> -->
+    <form action="">
+        <fieldset>
+            <legend>Web Development</legend>
+        <h1>Gender</h1>
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male </label><br>
+        <input type="radio" id="female" name="gender">
+        <label for="female" >Female</label><br>
+        <input type="radio" id="other" name="gender">
+        <label for="other">Other</label> <br>
+        <button>click</button>
+        <br><br>
+
+        <input type="text" id="text" placeholder="Write here" minlength="10" maxlength="10" autofocus accesskey="a">
+        <label for="text" >Write something</label> <br>
+        <button type="reset">click</button>
+        <br><br>
+
+        <textarea name="" id="" rows="5" cols="5" disabled></textarea>
+        <button type="reset" disabled>click</button> 
+        <br><br><br>
+
+        <select name="state" id=" state" >
+            <option value="">Select state</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Gujrat">Gujrat</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Goa">Goa</option>
+        </select>
+        <button type="reset">click</button>
+        <input type="text" name="" id="" placeholder="mobile number" value="+91 " minlength="14" maxlength="14" accesskey="b">
+    </fieldset>
+    </form>
+
+    <script>
+        let input = document.querySelector("input");
+        let span = document.querySelector("span");
+        input.addEventListener("input",(e)=>{
+            console.log(e.target.value); 
+            span.innerText = input.value
+        });
+        let select = document.querySelector("#state");
+        select.addEventListener("input",(e)=>{
+        console.log(e.target.name + ' : ', e.target.value);
+
+        });
+    </script>
+</body>
+</html>
